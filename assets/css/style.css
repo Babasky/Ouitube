@@ -1,0 +1,141 @@
+
+/*ici se regroupés les styles spécifiques de nos différentes balises*/
+/* icone de la side bar*/
+
+header .icon{
+    padding-left: 10px;
+}
+/* barre de recherche*/
+header .header-top-center input{
+    width: 80%;
+    height: 40px;
+}
+/* la loupe de recherche*/
+.header-top-center i{
+   border-top: 0.1 solid #ccc;
+   border-right: 0.1 solid #ccc;
+   border-bottom: 0.1 solid #ccc;
+   padding: 10px;
+}
+/* la partie droite de notre header*/
+header .header-top-right{
+    font-size: 1.8rem;
+}
+/* les icones de la partie droite du header*/
+header .header-top-right i:hover{
+    color: red;
+    transform: scale(1.8);
+}
+
+.logo img{
+    width: 150px;
+}
+
+.logo img:nth-child(2){
+    display: none;
+    width: 80px;
+}
+/* header left*/
+header .header-left{
+    z-index: 9999;
+    background-color: white;
+    height: 100vh;
+    width: 300px;
+    display: none;
+}
+
+header .header-left a{
+    display: block;
+    padding: 10px 5px;
+    text-decoration: none;
+    color: black;
+    
+}
+
+
+
+header .header-left li:hover{
+    font-weight: bold;
+    background-color: #efefef;
+    
+}
+button.loupe{
+    height: 40px;
+    border: 0.1px solid #ccc;
+}
+
+
+button.loupe i{
+    overflow: visible;
+}
+
+video{
+    border-radius: 10px;
+    width: 270px;
+}
+
+footer{
+    margin-top: 400px;
+   
+}
+
+.video-data{
+    font-size: 11.6px;
+
+}
+.video-meta-data{
+    display: flex;
+    color: gray;
+}
+
+.profil{
+    margin-top: 10px;
+}
+
+.owner-video{
+    margin-top: 0;
+    color: gray;
+}
+
+.video-title{
+    font-weight: bold;
+}
+.pagination{
+    margin: 30px 0;
+}
+.pagination-items{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: red;
+    font-size: 2rem;
+    color: white;
+}
+.pagination-items.active{
+    background-color: gray;
+}
+    
+@media screen and (max-width:650px) {
+    .logo img:nth-child(2){
+        display: block;
+    }
+
+    .logo img:nth-child(1){
+        display: none;
+    }
+
+    header .header-left{
+        width: 100%;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+

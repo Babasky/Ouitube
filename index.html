@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/assets/images/logo.png" type="image/x-icon">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <title>OuiTube</title>
+</head>
+<body>
+
+    <header class="box relative">
+        <!----- Le header a été divisé en trois parties left, center, right----->
+        <div class="header-top box flex">
+             <!----- La partie gauche du header----->
+            <div class="header-top-left flex-1 flex flex-center-v">
+                <div class="icon" id="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <a href="https://www.youtube.com" target="_blank">
+                    <div class="logo" style="display: inline-block; margin: 20px;">
+                       <img src="/assets/images/Group 1.png" alt="mon logo">
+                       <img src="/assets/images/logo.png" alt="">
+                    </div>
+                </a>
+            </div>
+             <!----- La partie centrale du header----->
+            <div class="header-top-center flex-3 flex flex-center-v flex-center-h">
+                 <!----- La barre de recherche----->
+                <input type="search" placeholder="Rechercher">
+                 <!----- icone recherche----->
+                 <button class="loupe">
+                    <i class="fas fa-search"></i>
+                 </button>
+               
+            </div>
+             <!----- La partie droite du header----->
+            <div class="header-top-right flex-1 flex flex-center-v flex-center-h">
+                <a href="" class="flex-1 text-center"><i class="fas fa-bell"></i></a>
+                <a href="" class="flex-1 text-center"><i class="fas fa-arrow-circle-up"></i></a>
+                <a href="" class="flex-1 text-center"><i class="fas fa-user-circle"></i></a>
+            </div>
+        </div>
+         <!----- le menu de navigation qui s'affiche quand on clique sur la side bar----->
+        <nav class="header-left fixed box absolute" id="nav">
+            <ul>
+                <li><a href="">Accueil</a></li>
+                <li><a href="">Bibliothèque</a></li>
+                <li><a href="">Compte</a></li>
+                <li><a href="">Vidéos</a></li>
+                <li><a href="">Mettre en ligne</a></li>
+                <li><a href="">S'inscrire</a></li>
+                
+                
+            </ul>
+        </nav>
+    </header>
+     <!----- Le container bootstrap dans laquelle sont régroupées nos vidéos----->
+     
+    <div class="container">
+        <!--l'élément bootstrap qui nous a permis d'aligner les vidéos-->
+
+        <div class="row">
+
+            <!--block signifie les balises div qui contient les vidéos, l'image de profil et le titre des vidéos-->
+
+                <div id="block1" class="col-sm-3">
+                    <div class="library-video-poster">
+                        <video src="/assets/video/mona.mp4"  controls poster="/assets/images/a.jpg"></video>
+                    </div>
+                    <div class="library-video-meta flex gap-2">
+                        <div class="profil">
+                            <img src="/assets/images/profil.jpg" alt="image de profil">
+                        </div>
+                        <div class="video-data">
+                            <div class="video-title">Clonez le réseau social Facebook en partant de zéro</div>
+                            <div class="owner-video">Web design</div>
+                            <div class="video-meta-data">
+                                <div class="video-view">452 vues. </div>
+                    
+                                <div class="video-time">&nbsp; il y a 21 heures.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="block2" class="col-sm-3 flex-center-h">
+                    <div class="library-video-poster">
+                        <video src="/assets/video/mona.mp4" controls poster="/assets/images/b.jpeg"></video>
+                    </div>
+                    <div class="library-video-meta flex gap-2">
+                        <div class="profil">
+                            <img src="/assets/images/profil.jpg" alt="image de profil">
+                        </div>
+                        <div class="video-data">
+                            <div class="video-title">Cours de fitness, profitez de séances gratuites pour vous révéler.</div>
+                            <div class="owner-video">Web design</div>
+                            <div class="video-meta-data flex-center-v">
+                                <div class="video-view">452 vues.&nbsp; </div>
+                                <div class="video-time">&nbsp; il y a 21 heures.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="block3" class="col-sm-3">
+                    <div class="library-video-poster">
+                        <video src="/assets/video/mona.mp4" controls poster="/assets/images/c.jpg"></video>
+                    </div>
+                    <div class="library-video-meta flex gap-2">
+                        <div class="profil">
+                            <img src="/assets/images/profil.jpg" alt="image de profil">
+                        </div>
+                        <div class="video-data">
+                            <div class="video-title">Découvrez comment les femmes réussissent dans la société</div>
+                            <div class="owner-video">Web design</div>
+                            <div class="video-meta-data">
+                                <div class="video-view">452 vues. </div>
+                                <div class="video-time">&nbsp; il y a 21 heures.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="block4" class="col-sm-3">
+                    <div class="library-video-poster">
+                        <video src="/assets/video/mona.mp4" controls poster="/assets/images/d.jpg"></video>
+                    </div>
+                    <div class="library-video-meta flex gap-2">
+                <div class="profil">
+                    <img src="/assets/images/profil.jpg" alt="image de profil">
+                </div>
+                <div class="video-data">
+                    <div class="video-title">La joie de vivre est à la porté de tous, sans exception aucune</div>
+                    
+                    <div class="owner-video">Web design</div>
+                    <div class="video-meta-data">
+                        <div class="video-view">452 vues. </div>
+                        <div class="video-time">&nbsp; il y a 21 heures.</div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+                <div id="block5" class="col-sm-3">
+                    <div class="library-video-poster">
+                        <video src="/assets/video/mona.mp4"  controls poster="/assets/images/e.jpg"></video>
+                    </div>
+                    <div class="library-video-meta flex gap-2">
+                        <div class="profil">
+                            <img src="/assets/images/profil.jpg" alt="image de profil">
+                        </div>
+                        <div class="video-data">
+                            <div class="video-title">Les sciences métallurgiques au coeur des innovations</div>
+                            <div class="owner-video">Web design</div>
+                            <div class="video-meta-data">
+                                <div class="video-view">452 vues. </div>
+                                <div class="video-time">&nbsp; il y a 21 heures.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="block6" class="col-sm-3">
+                    <div class="library-video-poster">
+                        <video src="/assets/video/mona.mp4"  controls poster="/assets/images/f.jpg"></video>
+                    </div>
+                    <div class="library-video-meta flex gap-2">
+                        <div class="profil">
+                            <img src="/assets/images/profil.jpg" alt="image de profil">
+                        </div>
+                        <div class="video-data">
+                            <div class="video-title">Découvrez comment marche internet et le web</div>
+                            <div class="owner-video">Web design</div>
+                            <div class="video-meta-data">
+                                <div class="video-view">452 vues. </div>
+                                <div class="video-time">&nbsp; il y a 21 heures.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="block7" class="col-sm-3">
+                    <div class="library-video-poster">
+                        <video src="/assets/video/mona.mp4" controls poster="/assets/images/g.jpg"></video>
+                    </div>
+                    <div class="library-video-meta flex gap-2">
+                        <div class="profil">
+                            <img src="/assets/images/profil.jpg" alt="image de profil">
+                        </div>
+                        <div class="video-data">
+                            <div class="video-title">Dévenez juste expert dans le développement web Frontend</div>
+                            <div class="owner-video">Web design</div>
+                            <div class="video-meta-data">
+                                <div class="video-view">452 vues. </div>
+                                <div class="video-time">&nbsp; il y a 21 heures.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="block8" class="col-sm-3">
+                    <div class="library-video-poster">
+                        <video src="/assets/video/mona.mp4"  controls poster="/assets/images/h.jpg"></video>
+                    </div>
+                    <div class="library-video-meta flex gap-2">
+                    <div class="profil">
+                        <img src="/assets/images/profil.jpg" alt="image de profil">
+                    </div>
+                    <div class="video-data">
+                        <div class="video-title">Découvrez les astuces pour travailler efficacement au bureau</div>
+                        <div class="owner-video">Web design</div>
+                        <div class="video-meta-data">
+                            <div class="video-view">452 vues. </div>
+                            <div class="video-time">&nbsp; il y a 21 heures.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pagination flex flex-center-h gap-5">
+            <div class="pagination-items text-center">&lt;</div>
+            <div class="pagination-items text-center active">1</div>
+            <div class="pagination-items text-center">2</div>
+            <div class="pagination-items text-center">&gt;</div>
+        </div>
+    </div>
+    <footer>
+        
+    </footer>
+    <!--le lien javascript de notre code-->
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
