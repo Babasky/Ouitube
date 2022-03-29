@@ -52,6 +52,9 @@ body{
     margin: 10px;
 }
 /*GAP*/
+.gap-1{
+    gap: 1px;
+}
 .gap-2{
     gap: 2px;
 }
@@ -128,6 +131,6 @@ i{
 }
 
 .profil img{
-    width: 50px;
+    width: 35px;
     border-radius: 50px;
 }
